@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[var(--color-bg)]">
       <TopBar active={tab} onChange={setTab} onOpenSettings={() => setSettingsOpen(true)} />
-      <main className="mx-auto max-w-3xl px-4 pb-24 pt-6">
+      <main className="mx-auto max-w-5xl px-4 pb-24 pt-6 sm:px-6">
         {tab === 'today' && <Today state={state} setState={setState} onNavigate={setTab} />}
         {tab === 'tracker' && <Tracker state={state} setState={setState} />}
         {tab === 'program' && <Program state={state} setState={setState} />}

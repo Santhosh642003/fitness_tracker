@@ -23,7 +23,7 @@ export function TopBar({
 
   return (
     <header className="sticky top-0 z-20 border-b border-[var(--color-line)] bg-[var(--color-bg)]/90 backdrop-blur">
-      <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-3">
+      <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-3">
         <Logo />
         <span className="hidden text-sm font-medium tracking-tight sm:inline">The Average</span>
         <nav className="ml-2 flex flex-1 gap-1 overflow-x-auto" aria-label="Sections">
@@ -56,7 +56,7 @@ export function TopBar({
           </svg>
         </button>
       </div>
-      <div className="mx-auto max-w-3xl px-4 pb-2 text-xs font-data text-[var(--color-ink-muted)] md:hidden">
+      <div className="mx-auto max-w-5xl px-4 pb-2 text-xs font-data text-[var(--color-ink-muted)] md:hidden">
         {weekRangeLabel(today)}
       </div>
     </header>
